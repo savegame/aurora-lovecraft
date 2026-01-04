@@ -1,33 +1,16 @@
-# LÖVE (Love2D) for AuroraOS
+# Lövecraft
 
-LÖVE is an *awesome* framework you can use to make 2D games in Lua. It's free, open-source, 
-and works on Windows, macOS, Linux, Android, and iOS.  
+A minecraft clone built in love 11.2 for fun using my custom 3d engine and [cpml](https://github.com/excessive/cpml).
 
-[LÖVE official page](https://love2d.org).
+*WARNING: This code is old and bad! Don't look at it!*
 
-Port of LÖVE for AuroraOS and SailfishOS made by sashikknox.  
-[Donate to sashikknox](https://boosty.to/sashikknox)  
+# About port for AuroraOS
+Game based on [LÖVE (Love2D) Engine](https://www.love2d.org/).  
+Port of Love2D and port of this game made by [sashikknox](https://t.me/auroraosgames). You can [donate to sashikknox on boosty](https://boosty.to/sashikknox/single-payment/donation/380527/target?share=target_link).  
 
-# Использование шаблона
-1. Весь код и ресурсы проект распологайте в папке `game`, так что бы был доступен файл `game/main.lua`
-2. В папку `icons` положите `*.png` файлы со всему размерами иконок вашего приложения, заменив те что 
-там уже лежат. Цифра в имени файла обозначает размер иконки, т.е. 86x86, 108x108, 128x128, 172x172 
-пикселей.
-3. Отредактируйте `rpm/game.spec` файл, и поставьте туда свои значения:
+If you want to port your own game to AuroraOS, you can use [this tempate project](https://github.com/savegame/aurora-love2d).  
 
-| паравметр | значение |
-| :--| :--|
-|%define _app_orgname|Обратное доменное имя организации, например `ru.sashikknox`|
-|%define _app_appname|Название приложения, например `AwesomeGame`|
-|%define _app_launcher_name|Название приложения в сетке прилоежний, например `Офигенная игра`|
-|Summary:|Тут может быть описание вашего прилоежния, краткое|
-|Release:|Cюда пишете инкрементируемый номер версии вашего приложения, например `1`|
-|Version:|Тут может быть и текстовое значение версии, но по калссике сюда идет версия вида `1.0.0`, но можете обозвать как угодно|
-|License:|Сюда можете вписать лицензию вашего проекта|
-
-Далее при сборке пакета содержимаое папки game упакуется в `game.love` файл, который уже будет 
-запускать движок Love2D, а так же сгенерирует все необходимые файлы для работ вашего проекта 
-в ОС Аврора.
+If you know other cool open-source Love2D games, you can write to sashikknox's Telegram channel "[sashikknox Все портит!](https://t.me/auroraosgames)", and the game may be ported to AuroraOS!
 
 # Build 
 - download and install [AuroraSDK](https://developer.auroraos.ru/doc/software_development/sdk/downloads)

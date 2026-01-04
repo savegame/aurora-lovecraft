@@ -14,3 +14,6 @@
 	path = libsdl
 	url = git@github.com:savegame/SDL.git
 	branch = auroraos-sdl2
+[submodule "game"]
+	path = game
+	url = git@github.com:savegame/lovecraft.git

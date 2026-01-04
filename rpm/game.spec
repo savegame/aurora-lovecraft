@@ -1,11 +1,11 @@
 %define _app_orgname ru.sashikknox
-%define _app_appname AwesomeGame
-%define _app_launcher_name Офигенная игра
+%define _app_appname lovecraft
+%define _app_launcher_name LoveCraft
 
 Name:       %{_app_orgname}.%{_app_appname}
 Summary:    Love2D Game Example for AuroraOS
 Release:    1
-Version:    1.0.0
+Version:    0.1.0
 Group:      Amusements/Games
 License:    BSD3
 Source0:    %{name}.tar.gz
@@ -73,7 +73,7 @@ make DESTDIR=`pwd` install
 popd 
 
 pushd build/%{_arch}/LuaJIT
-make -j`nproc`
+make CFLAGS=-"fPIC" -j`nproc`
 popd
 # update scripts
 pushd love/src/scripts
